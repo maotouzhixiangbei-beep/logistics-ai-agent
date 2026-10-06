@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+*.db
+.vscode/
+
+# 内部搭建/协作文档，不公开
+BUILD_SPEC.md
+确认Python环境.md
