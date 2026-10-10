@@ -116,19 +116,6 @@ pytest -q
 2. `test_agent.py` — Agent 是否正确调用工具、是否用上真实种子数据
 3. `test_server.py` — 后端 REST 接口的 HTTP 往返
 
-## 对应目标岗位（物流 AI 应用工程师）的映射
-
-| JD 能力要求 | 本项目对应点 |
-| --- | --- |
-| RAG / Agent / Function Calling | `@agent.tool` 4 个工具 = Function Calling；`instructions` 约束行为；结构化入参/返回 |
-| AI 应用快速接入、API 封装 | `WmsClient` 抽象 + 领域 Pydantic 模型，工具只依赖接口 |
-| 业务系统对接（TMS/WMS/OMS） | `/inventory`(WMS)、`/orders`(OMS)、`/shipments`(TMS) 三类接口 |
-| 轻量化部署与调试 | 单文件 FastAPI 后端 + `python -m logistics_agent.cli`，两分钟跑通 |
-| 快速验证效果并迭代优化 | 测试先行、无密钥 CI 可验证、模型层可替换（DeepSeek/OpenAI 切换） |
-
-## 技术栈
-
-Python · Pydantic AI · FastAPI · httpx · Pydantic · pytest
 
 ## License
 
